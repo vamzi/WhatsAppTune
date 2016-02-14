@@ -1,0 +1,103 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#212121">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/vl"
+        android:background="#212121">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:id="@+id/rl1"
+            >
+            <ImageView
+                android:id="@+id/bluimg"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" />
+            <ImageView android:id="@+id/album_art"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Text1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="My Tune"
+                android:textSize="25dp"
+                android:textColor="#F5F5F5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Check mark to enable my tune"
+                android:id="@+id/Text2"
+                android:layout_below="@+id/Text1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#F5F5F5" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Text2"
+                android:background="#00695C"
+               android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Text3"
+                android:text="Select MP3 file"
+                android:textSize="25dp"
+                android:layout_below="@+id/line"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#F5F5F5" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Text4"
+
+                android:text="Click selct mp3 to select a file"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@+id/Text3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#F5F5F5" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+

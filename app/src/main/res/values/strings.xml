@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WhatsAppTune</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pname">mytune.dev.v.whatsapptune</string>
+</resources>
